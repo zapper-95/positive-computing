@@ -6,40 +6,33 @@ body{
 
 .flexbox-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-content: flex-start;
   height: 100%;
 }
 
-.flexbox-item {
+.wonder-container {
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
 }
 
-.wonder {
-  background-color: #dfdfdf;
+.wonder-container .wonder {
+  flex-grow: 1;
 }
 
-#tree {
-  background-color: green;
+.wonder-container #tree {
+  background-color: #c7c7c7;
 }
 
-#leg {
-  background-color: cornsilk;
+.wonder-container #leg {
+  background-color: #a3a3a3;
 }
 
-#gut {
-  background-color: red;
+.wonder-container #gut {
+  background-color: #818181;
 }
 
-.line-break {
-  width: 100%;
-  max-height: 0;
-}
-
-.footer{
-  width: 100%;
-  max-height: 15vh;
-  background-color: black;
-  align-self: flex-end;
+.footer {
+  min-height: 10vh;
+  background-color: #313131;
 }
