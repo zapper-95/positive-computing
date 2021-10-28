@@ -33,6 +33,11 @@ body{
 }
 
 .footer {
-  height: 10vh;
+  height: 0vh;
+  transition: height, 1s;
   background-color: #313131;
+}
+
+.footer.grow {
+  height: 10vh;
 }
