@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 100%;
+}
+
+.flexbox-item {
+  flex-grow: 1;
+}
+
+.wonder {
+  background-color: #dfdfdf;
+}
+
+#tree {
+  background-color: green;
+}
+
+#leg {
+  background-color: cornsilk;
+}
+
+#gut {
+  background-color: red;
+}
+
+.line-break {
+  width: 100%;
+  max-height: 0;
+}
+
+.footer{
+  width: 100%;
+  max-height: 15vh;
+  background-color: black;
+  align-self: flex-end;
+}
