@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   height: 100vh;
+  overflow: hidden;
 }
 
 .flexbox-container {
@@ -18,18 +19,21 @@ body{
 
 .wonder-container .wonder {
   flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .wonder-container #tree {
-  background-color: #c7c7c7;
+  background-image: url("../Home/pexels-tree.jpg");
 }
 
 .wonder-container #leg {
-  background-color: #a3a3a3;
+  background-image: url("../Home/pexels-leg.jpg");
 }
 
 .wonder-container #gut {
-  background-color: #818181;
+  background-image: url("../Home/pexels-gut.jpg");
 }
 
 .footer {
