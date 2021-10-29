@@ -3,18 +3,21 @@ body{
   padding: 0;
   height: 100vh;
   overflow: hidden;
+  background-color: #000000;
 }
 
 .flexbox-container {
   display: flex;
   flex-direction: column;
   height: 100%;
+  pointer-events: none;
 }
 
 .wonder-container {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  pointer-events: none;
 }
 
 .wonder-container .wonder {
@@ -27,6 +30,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-content: center;
+
+  pointer-events: all;
+  transition: opacity, 0.85s;
 }
 
 .wonder-text {
@@ -35,16 +41,20 @@ body{
   color: white;
 }
 
-.wonder-container #tree {
+.wonder#tree {
   background-image: url("../Home/pexels-tree.jpg");
 }
 
-.wonder-container #leg {
+.wonder#leg {
   background-image: url("../Home/pexels-leg.jpg");
 }
 
-.wonder-container #gut {
+.wonder#gut {
   background-image: url("../Home/pexels-gut.jpg");
+}
+
+.wonder.darken {
+  opacity: 0.3;
 }
 
 .footer {
