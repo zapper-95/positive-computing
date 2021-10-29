@@ -1,9 +1,10 @@
 document.addEventListener('mousemove', (event) => {
-  let height = document.body.scrollHeight;
+  let height = window.innerHeight
   let mouseY = event.clientY;
 
   let heightDelta = height - mouseY;
-  let heightThreshold = height * 0.1;
+  let heightThreshold = height * 0.16;
+  console.log(height + " " + mouseY);
   
   let footer = document.getElementById("footer");
   if (heightDelta < heightThreshold) {

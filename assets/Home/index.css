@@ -4,6 +4,7 @@ body{
   height: 100vh;
   overflow: hidden;
   background-color: #000000;
+  font-family: 'Nunito', sans-serif;
 }
 
 .flexbox-container {
@@ -32,28 +33,26 @@ body{
   align-content: center;
 
   pointer-events: all;
-  transition: opacity, 1s;
+  transition: opacity, 0.7s;
 }
 
 .wonder-text {
   text-align: center;
   font-size: 10vw;
   color: white;
+  text-shadow: 2.5vw 2.5vw 3vw black;
 }
+
 
 .wonder a {
   text-align: center;
   height: 10vw;
-  padding-top: 3vw;
-}
-
-.wonder button {
-  height: 70%;
-  width: 60%;
-  border: 0px;
-  padding: 0px;
-  text-align: center;
-  font-size: 3vw;
+  width: auto;
+  padding-top: 0vw;
+  font-size: 9vw;
+  cursor: pointer;
+  text-shadow: 2.5vw 2.5vw 4vw black;
+  text-decoration: none;
 }
 
 .wonder#tree {
@@ -83,5 +82,5 @@ body{
 }
 
 .footer.grow {
-  height: 10vh;
+  height: 15vh;
 }
