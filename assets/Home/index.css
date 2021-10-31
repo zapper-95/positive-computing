@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Nunito', sans-serif;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  pointer-events: none;
+}
+
+.wonder-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  pointer-events: none;
+}
+
+.wonder-container .wonder {
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  pointer-events: all;
+  transition: opacity, 0.7s;
+}
+
+.wonder-text {
+  text-align: center;
+  font-size: 10vw;
+  color: white;
+  text-shadow: 2.5vw 2.5vw 3vw black;
+}
+
+
+.wonder a {
+  text-align: center;
+  height: 10vw;
+  width: auto;
+  padding-top: 0vw;
+  font-size: 9vw;
+  cursor: pointer;
+  text-shadow: 2.5vw 2.5vw 4vw black;
+  text-decoration: none;
+}
+
+.wonder#tree {
+  background-image: url("../Home/pexels-tree.jpg");
+}
+
+.wonder#leg {
+  background-image: url("../Home/pexels-leg.jpg");
+}
+
+.wonder#gut {
+  background-image: url("../Home/pexels-gut.jpg");
+}
+
+.wonder.darken {
+  opacity: 0.3;
+}
+
+.footer {
+  height: 0vh;
+  transition: height, 1s;
+  background-color: #313131;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer.grow {
+  height: 15vh;
+}
