@@ -1,4 +1,18 @@
 img{
     border-radius: 8px;
     display:align-block;
+<<<<<<< Updated upstream
+=======
+
+}
+
+img.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#footer p {
+    text-align: center;
+>>>>>>> Stashed changes
 }
