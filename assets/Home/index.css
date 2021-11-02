@@ -75,10 +75,16 @@ body{
   height: 0vh;
   transition: height, 1s;
   background-color: #313131;
+  pointer-events: all;
+  text-align: center;
 }
 
 .footer p {
   color: white;
+}
+
+.footer a {
+  color: white
 }
 
 .footer.grow {
